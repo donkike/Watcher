@@ -7,8 +7,13 @@
     <link rel="shortcut icon" href="/favicon.ico" />
     <?php include_stylesheets() ?>
     <?php include_javascripts() ?>
+    <title>
+      <?php include_slot('title', 'Watcher, Movie Rating') ?>
+    </title>
   </head>
   <body>
-    <?php echo $sf_content ?>
+    <div id="content">        
+        <?php echo $sf_content ?>
+    </div>
   </body>
 </html>

@@ -2,9 +2,13 @@
 # http://www.symfony-project.org/reference/1_4/en/10-Routing
 
 # default rules
+movie:
+  class: sfDoctrineRouteCollection
+  options: { model: Movie }
+
 homepage:
   url:   /
-  param: { module: default, action: index }
+  param: { module: movie, action: index }
 
 # generic rules
 # please, remove them by adding more specific rules
