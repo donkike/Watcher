@@ -15,6 +15,7 @@ abstract class BaseMovieFormFilter extends BaseFormFilterDoctrine
     $this->setWidgets(array(
       'title'        => new sfWidgetFormFilterInput(array('with_empty' => false)),
       'director_id'  => new sfWidgetFormDoctrineChoice(array('model' => $this->getRelatedModelName('Director'), 'add_empty' => true)),
+      'genre_id'     => new sfWidgetFormDoctrineChoice(array('model' => $this->getRelatedModelName('Genre'), 'add_empty' => true)),
       'year'         => new sfWidgetFormFilterInput(array('with_empty' => false)),
       'synopsis'     => new sfWidgetFormFilterInput(),
       'image_link'   => new sfWidgetFormFilterInput(),
@@ -26,6 +27,7 @@ abstract class BaseMovieFormFilter extends BaseFormFilterDoctrine
     $this->setValidators(array(
       'title'        => new sfValidatorPass(array('required' => false)),
       'director_id'  => new sfValidatorDoctrineChoice(array('required' => false, 'model' => $this->getRelatedModelName('Director'), 'column' => 'id')),
+      'genre_id'     => new sfValidatorDoctrineChoice(array('required' => false, 'model' => $this->getRelatedModelName('Genre'), 'column' => 'id')),
       'year'         => new sfValidatorSchemaFilter('text', new sfValidatorInteger(array('required' => false))),
       'synopsis'     => new sfValidatorPass(array('required' => false)),
       'image_link'   => new sfValidatorPass(array('required' => false)),
@@ -54,6 +56,7 @@ abstract class BaseMovieFormFilter extends BaseFormFilterDoctrine
       'id'           => 'Number',
       'title'        => 'Text',
       'director_id'  => 'ForeignKey',
+      'genre_id'     => 'ForeignKey',
       'year'         => 'Number',
       'synopsis'     => 'Text',
       'image_link'   => 'Text',

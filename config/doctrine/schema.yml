@@ -1,16 +1,22 @@
 Movie:
-  actAs: { Timestampable: ~}
+  actAs: { Timestampable: ~ }
   columns:
-    title: { type: string(255), notnull: true, unique: true}
+    title: { type: string(255), notnull: true, unique: true }
     director_id: { type: integer, notnull: true }
+    genre_id: { type: integer, notnull: true }
     year: { type: integer, notnull: true }
     synopsis: { type: string(4000) }
     image_link: { type: string(255), unique: true }
     trailer_link: { type: string(255), unique: true }
   relations:
     Director: { local: director_id, foreign: id, foreignAlias: Movies }
+    Genre: { local: genre_id, foreign: id, foreignAlias: Movies }
     
 Director:
+  columns:
+    name: { type: string(255), unique: true, notnull: true }
+    
+Genre:
   columns:
     name: { type: string(255), unique: true, notnull: true }
 

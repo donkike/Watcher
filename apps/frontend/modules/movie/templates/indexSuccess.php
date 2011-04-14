@@ -2,12 +2,16 @@
 
 <?php foreach($movies as $movie): ?>
   <div class="movie-index">
-    <a href="<?php echo url_for('movie_show', $movie) ?>">Show</a>
+    <div class="movie-links">
+      <?php echo link_to('Show', url_for("movie_show", $movie)) ?> | 
+      <?php echo link_to("Edit", url_for("movie_edit", $movie)) ?>
+    </div>    
     <h2><?php echo $movie->getTitle() ?></h2>    
     <div class="movie-info">
       <dl>
         <dt>Year</dt><dd><?php echo $movie->getYear() ?></dd>
         <dt>Director</dt><dd><?php echo $movie->getDirector()->getName() ?></dd>
+        <dt>Genre</dt><dd><?php echo $movie->getGenre()->getName() ?></dd>
       </dl>
       <p>
         <?php echo substr($movie->getSynopsis(), 0, 200) ?>
@@ -17,7 +21,12 @@
       </p>      
     </div>
     <?php if ($movie->getImageLink()): ?>
-      <img src="/images/upload/<?php echo $movie->getImageLink() ?>" title="<?php echo $movie->getTitle() ?>" alt="No image found" />
+      <?php echo image_tag('upload/'.$movie->getImageLink()) ?>
+    <?php else: ?>
+      <div class="no-image">
+        <em>No image currently uploaded.</em><br />
+        <?php echo link_to("Upload!", url_for("movie_edit", $movie))  ?>
+      </div>
     <?php endif ?>
   </div>
 <?php endforeach ?>

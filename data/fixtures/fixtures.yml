@@ -1,3 +1,7 @@
+Genre:
+  action:
+    name: Action
+
 Director:
   christopher:
     name: Christopher Nolan
@@ -5,6 +9,7 @@ Director:
 Movie:
   inception:
     Director: christopher
+    Genre: action
     title: Inception
     year: 2010
     synopsis: |
