@@ -1,0 +1,27 @@
+Movie:
+  actAs: { Timestampable: ~}
+  columns:
+    title: { type: string(255), notnull: true, unique: true}
+    director_id: { type: integer, notnull: true }
+    year: { type: integer, notnull: true }
+    synopsis: { type: string(4000) }
+    image_link: { type: string(255), unique: true }
+    trailer_link: { type: string(255), unique: true }
+  relations:
+    Director: { local: director_id, foreign: id, foreignAlias: Movies }
+    
+Director:
+  columns:
+    name: { type: string(255), unique: true, notnull: true }
+
+MovieRating:
+  actAs: { Timestampable: ~ }
+  columns:
+    movie_id: { type: integer, notnull: true, unique: true }
+    aggregate: { type: float, default: 0, notnull: true }
+    votes: { type: integer, default: 0, notnull: true }
+    average: { type: float, default: 0, notnull: true }
+  relations:
+    Movie: { onDelete: CASCADE, local: movie_id, foreign: id, foreignAlias: Movie }
+  
+    
