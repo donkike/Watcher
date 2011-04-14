@@ -1,46 +1,28 @@
-<table>
-  <tbody>
-    <tr>
-      <th>Id:</th>
-      <td><?php echo $movie->getId() ?></td>
-    </tr>
-    <tr>
-      <th>Title:</th>
-      <td><?php echo $movie->getTitle() ?></td>
-    </tr>
-    <tr>
-      <th>Director:</th>
-      <td><?php echo $movie->getDirectorId() ?></td>
-    </tr>
-    <tr>
-      <th>Year:</th>
-      <td><?php echo $movie->getYear() ?></td>
-    </tr>
-    <tr>
-      <th>Synopsis:</th>
-      <td><?php echo $movie->getSynopsis() ?></td>
-    </tr>
-    <tr>
-      <th>Image link:</th>
-      <td><?php echo $movie->getImageLink() ?></td>
-    </tr>
-    <tr>
-      <th>Trailer link:</th>
-      <td><?php echo $movie->getTrailerLink() ?></td>
-    </tr>
-    <tr>
-      <th>Created at:</th>
-      <td><?php echo $movie->getCreatedAt() ?></td>
-    </tr>
-    <tr>
-      <th>Updated at:</th>
-      <td><?php echo $movie->getUpdatedAt() ?></td>
-    </tr>
-  </tbody>
-</table>
+<h1><?php echo $movie->getTitle() ?></h1>
 
-<hr />
+<div id="movie-info">
+  
+    <div id="movie-meta">
+      <?php if ($movie->getImageLink()): ?>
+        <?php echo image_tag('upload/'.$movie->getImageLink(), array('alt' => 'Image not found.')) ?>
+      <?php else: ?>
+        <?php include_partial('noImage', array('movie' => $movie)) ?>
+      <?php endif ?>
+      <dl>
+        <dt>Director</dt><dd><?php echo $movie->getDirector()->getName() ?></dd>
+        <dt>Year</dt><dd><?php echo $movie->getYear() ?></dd>
+        <dt>Genre</dt><dd><?php echo $movie->getGenre()->getName() ?></dd>
+      </dl>
+    </div>
+  </div>
+  <div id="movie-synopsis">
+    <p>
+      <?php echo $movie->getSynopsis() ?>
+    </p>  
+  </div>
 
-<a href="<?php echo url_for('movie/edit?id='.$movie->getId()) ?>">Edit</a>
-&nbsp;
-<a href="<?php echo url_for('movie/index') ?>">List</a>
+
+
+<div id="trailer">
+  <iframe title="YouTube video player" width="480" height="390" src="http://www.youtube.com/embed/<?php echo $movie->getTrailerLink() ?>" frameborder="0" allowfullscreen></iframe>
+</div>

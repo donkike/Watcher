@@ -1,3 +1,7 @@
+dt {
+	font-weight: bold;
+}
+
 #content {
 	margin: auto;
 	width: 800px;
@@ -5,7 +9,7 @@
 
 .movie-index {
 	width: 500px;
-	height: 300px;
+	height: 330px;
 	margin: auto;
 	background-color: #92DEEC;
 	padding: 20px;
@@ -18,23 +22,45 @@
 	height: 170px;
 }
 
-.movie-index .no-image {
+.movie-index img {
 	width: 170px;
 	height: 170px;
+}
+
+.no-image {
 	border-style: solid;
 }
 
-.movie-index dt {
-	font-weight: bold;
+.movie-index .no-image {
+	width: 100px;
+	height: 100px;
 }
 
-.movie-index .movie-info {
+.movie-index .movie-info-short {
 	margin: 0 10px;
 	width: 240px;
 	float: right;
 }
 
 .movie-index .movie-links {
+	float: right;
+}
+
+#movie-info img {
+	width: 200px;
+	height: 200px;
+}
+
+#movie-info .no-image {
+	width: 200px;
+	height: 200px;
+}
+
+#movie-synopsis {
+	width: 530px;
+}
+
+#movie-meta {
 	float: right;
 }
 
