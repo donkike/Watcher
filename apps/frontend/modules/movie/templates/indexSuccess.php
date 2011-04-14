@@ -1,3 +1,5 @@
+<?php use_stylesheet('movie_index') ?>
+
 <h1>Watcher</h1>
 
 <?php foreach($movies as $movie): ?>

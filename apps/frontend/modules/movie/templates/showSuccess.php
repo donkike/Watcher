@@ -1,3 +1,5 @@
+<?php use_stylesheet('movie_show') ?>
+
 <h1><?php echo $movie->getTitle() ?></h1>
 
 <div id="movie-info">

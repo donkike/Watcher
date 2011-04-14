@@ -1,0 +1,17 @@
+#movie-info img {
+	width: 200px;
+	height: 200px;
+}
+
+#movie-info .no-image {
+	width: 200px;
+	height: 200px;
+}
+
+#movie-synopsis {
+	width: 530px;
+}
+
+#movie-meta {
+	float: right;
+}
