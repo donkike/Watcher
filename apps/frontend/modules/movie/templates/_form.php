@@ -3,7 +3,7 @@
 
 <form action="<?php echo url_for('movie/'.($form->getObject()->isNew() ? 'create' : 'update').(!$form->getObject()->isNew() ? '?id='.$form->getObject()->getId() : '')) ?>" method="post" <?php $form->isMultipart() and print 'enctype="multipart/form-data" ' ?>>
 <?php if (!$form->getObject()->isNew()): ?>
-<input type="hidden" name="sf_method" value="put" />
+  <input type="hidden" name="sf_method" value="put" />
 <?php endif; ?>
   <table>
     <tfoot>
@@ -18,7 +18,16 @@
       </tr>
     </tfoot>
     <tbody>
-      <?php echo $form ?>
+      <dl>
+        <dt>Title</dt><dd><?php echo $form['title']->render() ?></dd>
+        <dt>Year</dt><dd><?php echo $form['year']->render() ?></dd>
+        <dt>Genre</dt><dd><?php echo $form['genre_id']->render() ?></dd>
+        <dt>Director</dt><dd><?php echo $form['director_id']->render() ?></dd>
+        <dt>Synopsis</dt><dd><?php echo $form['synopsis']->render() ?></dd>
+        <dt>Image Link</dt><dd><?php echo $form['image_link']->render() ?></dd>
+        <dt>Trailer Link</dt><dd>http://www.youtube.com/watch?v=<?php echo $form['trailer_link']->render() ?></dd>
+        <?php echo $form['_csrf_token']->render() ?>
+      </dl>
     </tbody>
   </table>
 </form>

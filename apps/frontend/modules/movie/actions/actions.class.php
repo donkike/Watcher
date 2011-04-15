@@ -72,7 +72,6 @@ class movieActions extends sfActions
     if ($form->isValid())
     {
       $movie = $form->save();
-
       $this->redirect('movie/edit?id='.$movie->getId());
     }
   }

@@ -23,8 +23,6 @@ abstract class BaseMovieForm extends BaseFormDoctrine
       'synopsis'     => new sfWidgetFormTextarea(),
       'image_link'   => new sfWidgetFormInputText(),
       'trailer_link' => new sfWidgetFormInputText(),
-      'created_at'   => new sfWidgetFormDateTime(),
-      'updated_at'   => new sfWidgetFormDateTime(),
     ));
 
     $this->setValidators(array(
@@ -36,8 +34,6 @@ abstract class BaseMovieForm extends BaseFormDoctrine
       'synopsis'     => new sfValidatorString(array('max_length' => 4000, 'required' => false)),
       'image_link'   => new sfValidatorString(array('max_length' => 255, 'required' => false)),
       'trailer_link' => new sfValidatorString(array('max_length' => 255, 'required' => false)),
-      'created_at'   => new sfValidatorDateTime(),
-      'updated_at'   => new sfValidatorDateTime(),
     ));
 
     $this->validatorSchema->setPostValidator(

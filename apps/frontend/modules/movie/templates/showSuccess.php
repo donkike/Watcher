@@ -6,7 +6,7 @@
   
     <div id="movie-meta">
       <?php if ($movie->getImageLink()): ?>
-        <?php echo image_tag('upload/'.$movie->getImageLink(), array('alt' => 'Image not found.')) ?>
+        <?php echo image_tag($movie->getImageLink(), array('alt' => 'Image not found.')) ?>
       <?php else: ?>
         <?php include_partial('noImage', array('movie' => $movie)) ?>
       <?php endif ?>
