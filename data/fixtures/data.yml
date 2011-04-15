@@ -1,0 +1,57 @@
+Director:
+  Director_1:
+    name: 'Christopher Nolan'
+  Director_2:
+    name: 'Roland Emmerich'
+  Director_3:
+    name: 'Tom Vaughan'
+Genre:
+  Genre_1:
+    name: Action
+  Genre_2:
+    name: Adventure
+  Genre_5:
+    name: Comedy
+  Genre_3:
+    name: Drama
+  Genre_4:
+    name: Horror
+Movie:
+  Movie_1:
+    title: Inception
+    Director: Director_1
+    Genre: Genre_1
+    year: '2010'
+    synopsis: "Visionary filmmaker Christopher Nolan (Memento, The Dark Knight) writes and directs this psychological sci-fi action film about a thief who possesses the power to enter into the dreams of others. Dom Cobb (Leonardo DiCaprio) doesn't steal things, he steals ideas. By projecting himself deep into the subconscious of his targets, he can glean information that even the best computer hackers can't get to. In the world of corporate espionage, Cobb is the ultimate weapon. But even weapons have their weakness, and when Cobb loses everything, he's forced to embark on one final mission in a desperate quest for redemption. This time, Cobb won't be harvesting an idea, but sowing one. Should he and his team of specialists succeed, they will have discovered a new frontier in the art of psychic espionage. They've planned everything to perfection, and they have all the tools to get the job done. Their mission is complicated, however, by the sudden appearance of a malevolent foe that seems to know exactly what they're up to, and precisely how to stop them.\r\n"
+    image_link: 'http://4.bp.blogspot.com/_vfHNXhfceHg/TU2r9HCdynI/AAAAAAAAAs8/BG0hgjJ6A0I/s1600/Inception.jpg'
+    trailer_link: 66TuSJo4dZM
+    created_at: '2011-04-14 12:31:00'
+    updated_at: '2011-04-15 04:05:18'
+  Movie_2:
+    title: '10,000 B.C.'
+    Director: Director_2
+    Genre: Genre_2
+    year: '2008'
+    synopsis: "From director Roland Emmerich (“Independence Day,” “The Day After Tomorrow”) comes a sweeping odyssey into a mythical age of prophesies and gods, when spirits rule the land and mighty mammoths shake the earth.\r\n\r\nIn a remote mountain tribe, the young hunter D’Leh (Steven Strait) has found his heart’s passion – the beautiful Evolet (Camilla Belle). But when a band of mysterious warlords raid his village and kidnap Evolet, D’Leh leads a small group of hunters to pursue the warlords to the end of the world to save her. As they venture into unknown lands for the first time, the group discovers there are civilizations beyond their own and that mankind’s reach is far greater than they ever knew."
+    image_link: 'http://3.bp.blogspot.com/_-i1NEy3eY10/R4thSXU8EOI/AAAAAAAAAaI/JA3uq_UCGtY/s320/10000bcb.jpg'
+    trailer_link: mQnggTGXtLY
+    created_at: '2011-04-15 03:59:18'
+    updated_at: '2011-04-15 03:59:18'
+  Movie_3:
+    title: 'What Happens in Vegas'
+    Director: Director_3
+    Genre: Genre_5
+    year: '2008'
+    synopsis: "Two strangers awaken together to discover they've gotten married following a night of debauchery in Sin City, and one of them has won a huge jackpot after playing the other's quarter. The newlyweds devise ever-escalating schemes to undermine each other and get their hands on the money – only to find themselves falling in love amid the mutual backstabbing.\r\n"
+    image_link: 'http://4.bp.blogspot.com/_pBpETa6BY5c/SB0WNblXrgI/AAAAAAAAAVk/7064J7gP9iY/s320/whathappensinvegasb.jpg'
+    trailer_link: YJGAsbcfuRs
+    created_at: '2011-04-15 04:01:24'
+    updated_at: '2011-04-15 04:01:24'
+MovieRating:
+  MovieRating_1:
+    Movie: Movie_1
+    aggregate: '0.00'
+    votes: '0'
+    average: '0.00'
+    created_at: '2011-04-14 12:31:51'
+    updated_at: '2011-04-14 12:31:51'
