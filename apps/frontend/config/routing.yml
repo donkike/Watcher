@@ -5,6 +5,14 @@
 movie:
   class: sfDoctrineRouteCollection
   options: { model: Movie }
+  
+director:
+  class: sfDoctrineRouteCollection
+  options: { model: Director }
+
+genre:
+  class: sfDoctrineRouteCollection
+  options: { model: Genre }
 
 homepage:
   url:   /

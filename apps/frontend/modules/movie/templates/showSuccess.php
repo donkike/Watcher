@@ -1,6 +1,7 @@
 <?php use_stylesheet('movie_show') ?>
 
 <h1><?php echo $movie->getTitle() ?></h1>
+<?php echo link_to('Edit', url_for('movie_edit', $movie)) ?>
 
 <div id="movie-info">
   
@@ -28,3 +29,5 @@
 <div id="trailer">
   <iframe title="YouTube video player" width="480" height="390" src="http://www.youtube.com/embed/<?php echo $movie->getTrailerLink() ?>" frameborder="0" allowfullscreen></iframe>
 </div>
+
+<?php echo link_to('Back to list', url_for('movie')) ?>
