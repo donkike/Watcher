@@ -1,7 +1,7 @@
 <?php use_stylesheet('movie_index') ?>
 
 <h1>Watcher</h1>
-
+<a href="<?php echo url_for('movie/new') ?>">New</a>
 <?php foreach($movies as $movie): ?>
   <div class="movie-index">
     <div class="movie-links">
@@ -30,4 +30,4 @@
   </div>
 <?php endforeach ?>
 
-<a href="<?php echo url_for('movie/new') ?>">New</a>
+

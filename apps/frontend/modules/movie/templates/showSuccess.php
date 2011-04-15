@@ -1,7 +1,10 @@
 <?php use_stylesheet('movie_show') ?>
 
 <h1><?php echo $movie->getTitle() ?></h1>
-<?php echo link_to('Edit', url_for('movie_edit', $movie)) ?>
+<div class= "user_nav"> 
+   <?php echo link_to('Edit', url_for('movie_edit', $movie)) ?> |
+   <?php echo link_to('Back to list', url_for('movie')) ?>
+</div>
 
 <div id="movie-info">
   
@@ -18,6 +21,7 @@
       </dl>
     </div>
   </div>
+<div class= "container">
   <div id="movie-synopsis">
     <p>
       <?php echo $movie->getSynopsis() ?>
@@ -29,5 +33,5 @@
 <div id="trailer">
   <iframe title="YouTube video player" width="480" height="390" src="http://www.youtube.com/embed/<?php echo $movie->getTrailerLink() ?>" frameborder="0" allowfullscreen></iframe>
 </div>
+</div>
 
-<?php echo link_to('Back to list', url_for('movie')) ?>

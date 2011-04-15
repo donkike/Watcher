@@ -2,7 +2,7 @@
 	width: 500px;
 	height: 330px;
 	margin: 20px auto;
-	background-color: #92DEEC;
+	background-color: #FFF0D4;
 	padding: 20px;
 	-moz-border-radius: 20px;
 	-webkit-border-radius: 20px;
@@ -31,4 +31,8 @@
 
 .movie-index .movie-links {
 	float: right;
+	
 }
+
+
+
