@@ -33,7 +33,7 @@ class MovieForm extends BaseMovieForm
       }*/
       $this->values['image_link'] = $filename.$extension;
       $upload->save($filepath);
-    }
+    } 
     return parent::doSave($con);
   }
   

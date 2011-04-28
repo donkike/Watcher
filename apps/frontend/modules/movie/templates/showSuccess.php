@@ -29,9 +29,12 @@
   </div>
 
 
-
-<div id="trailer">
-  <iframe title="YouTube video player" width="480" height="390" src="http://www.youtube.com/embed/<?php echo $movie->getTrailerLink() ?>" frameborder="0" allowfullscreen></iframe>
-</div>
+<?php if ($movie->getTrailerLink()): ?>
+  <div id="trailer">
+    <iframe title="YouTube video player" width="480" height="390" src="http://www.youtube.com/embed/<?php echo $movie->getTrailerLink() ?>"       frameborder="0" allowfullscreen></iframe>
+  </div>
+<?php else: ?>
+  <?php include_partial('noTrailer', array('movie' => $movie)) ?>
+<?php endif ?>
 </div>
 
