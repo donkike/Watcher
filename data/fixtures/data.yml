@@ -1,6 +1,8 @@
 Director:
   Director_1:
     name: 'Christopher Nolan'
+  Director_4:
+    name: 'Pete Docter'
   Director_2:
     name: 'Roland Emmerich'
   Director_3:
@@ -10,11 +12,11 @@ Genre:
     name: Action
   Genre_2:
     name: Adventure
-  Genre_5:
-    name: Comedy
   Genre_3:
-    name: Drama
+    name: Comedy
   Genre_4:
+    name: Drama
+  Genre_5:
     name: Horror
 Movie:
   Movie_1:
@@ -23,30 +25,40 @@ Movie:
     Genre: Genre_1
     year: '2010'
     synopsis: "Visionary filmmaker Christopher Nolan (Memento, The Dark Knight) writes and directs this psychological sci-fi action film about a thief who possesses the power to enter into the dreams of others. Dom Cobb (Leonardo DiCaprio) doesn't steal things, he steals ideas. By projecting himself deep into the subconscious of his targets, he can glean information that even the best computer hackers can't get to. In the world of corporate espionage, Cobb is the ultimate weapon. But even weapons have their weakness, and when Cobb loses everything, he's forced to embark on one final mission in a desperate quest for redemption. This time, Cobb won't be harvesting an idea, but sowing one. Should he and his team of specialists succeed, they will have discovered a new frontier in the art of psychic espionage. They've planned everything to perfection, and they have all the tools to get the job done. Their mission is complicated, however, by the sudden appearance of a malevolent foe that seems to know exactly what they're up to, and precisely how to stop them.\r\n"
-    image_link: 'http://4.bp.blogspot.com/_vfHNXhfceHg/TU2r9HCdynI/AAAAAAAAAs8/BG0hgjJ6A0I/s1600/Inception.jpg'
+    image_link: movie_image_8a26ba380caa6ce7f87bf67c3278293cee5798d8.jpg
     trailer_link: 66TuSJo4dZM
     created_at: '2011-04-14 12:31:00'
-    updated_at: '2011-04-15 04:05:18'
+    updated_at: '2011-04-28 16:07:22'
   Movie_2:
     title: '10,000 B.C.'
     Director: Director_2
     Genre: Genre_2
     year: '2008'
     synopsis: "From director Roland Emmerich (“Independence Day,” “The Day After Tomorrow”) comes a sweeping odyssey into a mythical age of prophesies and gods, when spirits rule the land and mighty mammoths shake the earth.\r\n\r\nIn a remote mountain tribe, the young hunter D’Leh (Steven Strait) has found his heart’s passion – the beautiful Evolet (Camilla Belle). But when a band of mysterious warlords raid his village and kidnap Evolet, D’Leh leads a small group of hunters to pursue the warlords to the end of the world to save her. As they venture into unknown lands for the first time, the group discovers there are civilizations beyond their own and that mankind’s reach is far greater than they ever knew."
-    image_link: 'http://3.bp.blogspot.com/_-i1NEy3eY10/R4thSXU8EOI/AAAAAAAAAaI/JA3uq_UCGtY/s320/10000bcb.jpg'
+    image_link: movie_image_06158a89cbdfe26b0322d7762db4812abce5e1e9.jpg
     trailer_link: mQnggTGXtLY
     created_at: '2011-04-15 03:59:18'
-    updated_at: '2011-04-15 03:59:18'
+    updated_at: '2011-04-28 16:08:00'
   Movie_3:
     title: 'What Happens in Vegas'
     Director: Director_3
-    Genre: Genre_5
+    Genre: Genre_3
     year: '2008'
     synopsis: "Two strangers awaken together to discover they've gotten married following a night of debauchery in Sin City, and one of them has won a huge jackpot after playing the other's quarter. The newlyweds devise ever-escalating schemes to undermine each other and get their hands on the money – only to find themselves falling in love amid the mutual backstabbing.\r\n"
-    image_link: 'http://4.bp.blogspot.com/_pBpETa6BY5c/SB0WNblXrgI/AAAAAAAAAVk/7064J7gP9iY/s320/whathappensinvegasb.jpg'
+    image_link: movie_image_d324062251664abd8367e83e9168b9a5f9f88a65.jpg
     trailer_link: YJGAsbcfuRs
     created_at: '2011-04-15 04:01:24'
-    updated_at: '2011-04-15 04:01:24'
+    updated_at: '2011-04-28 16:08:12'
+  Movie_4:
+    title: Up
+    Director: Director_4
+    Genre: Genre_3
+    year: '2009'
+    synopsis: 'Young Carl Fredricksen (Jeremy Leary) is a shy, quiet boy who idolizes renowned explorer Charles F. Muntz (Christopher Plummer). He is saddened to learn, however, that Muntz has been accused of fabricating the skeleton of a giant bird he had claimed to have discovered in Paradise Falls, South America. Muntz vows to return there to capture one alive. One day, Carl befriends an energetic and somewhat eccentric tomboy named Ellie (Elizabeth Docter), who is also a Muntz fan. She confides to Carl her desire to move her "clubhouse"—an abandoned house in the neighborhood—to a cliff overlooking Paradise Falls, making him promise to help her. Carl and Ellie eventually get married and grow old together in the restored house, working as a toy balloon vendor and a zookeeper, respectively. Unable to have children, they repeatedly pool their savings for a trip to Paradise Falls, but end up spending it on more pressing needs. An elderly Carl finally arranges for the trip, but Ellie suddenly becomes ill and dies, leaving him alone.'
+    image_link: movie_image_2c456c300a55782314ad4f53ab486732745be7ce.jpg
+    trailer_link: pkqzFUhGPJg
+    created_at: '2011-04-28 16:10:18'
+    updated_at: '2011-04-28 16:10:18'
 MovieRating:
   MovieRating_1:
     Movie: Movie_1

@@ -15,7 +15,7 @@
  * 
  * @package    Watcher
  * @subpackage model
- * @author     Your name here
+ * @author     Esteban Alarcón Ceballos, Enrique Arango Lyons, Daniel Múnera Sánchez
  * @version    SVN: $Id: Builder.php 7490 2010-03-29 19:53:27Z jwage $
  */
 abstract class BaseDirector extends sfDoctrineRecord

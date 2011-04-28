@@ -7,7 +7,7 @@
  *
  * @package    Watcher
  * @subpackage form
- * @author     Your name here
+ * @author     Esteban Alarcón Ceballos, Enrique Arango Lyons, Daniel Múnera Sánchez
  * @version    SVN: $Id: sfDoctrineFormGeneratedTemplate.php 29553 2010-05-20 14:33:00Z Kris.Wallsmith $
  */
 abstract class BaseMovieForm extends BaseFormDoctrine
@@ -41,11 +41,7 @@ abstract class BaseMovieForm extends BaseFormDoctrine
     ));
 
     $this->validatorSchema->setPostValidator(
-      new sfValidatorAnd(array(
-        new sfValidatorDoctrineUnique(array('model' => 'Movie', 'column' => array('title'))),
-        new sfValidatorDoctrineUnique(array('model' => 'Movie', 'column' => array('image_link'))),
-        new sfValidatorDoctrineUnique(array('model' => 'Movie', 'column' => array('trailer_link'))),
-      ))
+      new sfValidatorDoctrineUnique(array('model' => 'Movie', 'column' => array('title')))
     );
 
     $this->widgetSchema->setNameFormat('movie[%s]');

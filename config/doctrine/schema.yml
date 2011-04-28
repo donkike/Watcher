@@ -6,8 +6,8 @@ Movie:
     genre_id: { type: integer, notnull: true }
     year: { type: integer, notnull: true }
     synopsis: { type: string(4000) }
-    image_link: { type: string(255), unique: true }
-    trailer_link: { type: string(255), unique: true }
+    image_link: { type: string(255) }
+    trailer_link: { type: string(255) }
   relations:
     Director: { local: director_id, foreign: id, foreignAlias: Movies }
     Genre: { local: genre_id, foreign: id, foreignAlias: Movies }

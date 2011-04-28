@@ -1,9 +1,9 @@
 body {
-    background-color:#A9D0F5
+  background-color:#A9D0F5
 }
 
 h1 {
-    margin-left: 40%;
+	margin-left: 40%;
 }
 dt {
 	font-weight: bold;
@@ -19,17 +19,13 @@ dt {
 	border-style: solid;
 }
 
-a{
-    color:black;
+a {
+    color: black;
 }
-a:hover{
-    font-size:20px;
+a:hover {
+    font-weight: bold;
 }
 
 .user_nav{
     
-}
-
-.add-link{
-    text-decoration: none;
 }

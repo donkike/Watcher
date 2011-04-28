@@ -25,7 +25,7 @@
         <dt>Genre</dt><dd><?php echo $form['genre_id']->render() ?></dd><?php echo link_to('add...', url_for('genre_new'), array('class' => 'add-link')) ?>
         <dt>Director</dt><dd><?php echo $form['director_id']->render() ?></dd><?php echo link_to('add...', url_for('director_new'), array('class' => 'add-link')) ?>
         <dt>Synopsis</dt><dd><?php echo $form['synopsis']->render() ?></dd>
-        <dt>Image Link</dt><dd><?php echo $form['image_link']->render() ?></dd>
+        <dt>Upload image</dt><dd><?php echo $form['image_file']->render() ?></dd>
         <dt>Trailer Link</dt><dd>http://www.youtube.com/watch?v=<?php echo $form['trailer_link']->render() ?></dd>
         <?php echo $form['_csrf_token']->render() ?>
       </dl>

@@ -23,7 +23,7 @@
       </p>      
     </div>
     <?php if ($movie->getImageLink()): ?>
-      <?php echo image_tag($movie->getImageLink()) ?>
+      <?php echo image_tag('/uploads/'.$movie->getImageLink()) ?>
     <?php else: ?>
       <?php include_partial('noImage', array('movie' => $movie)) ?>
     <?php endif ?>

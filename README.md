@@ -4,7 +4,7 @@ Watcher
 Introduction
 ------------
 
-Movie rating app made with Symfony.
+Movie rating app made with Symfony. 
 
 Instructions
 ------------
