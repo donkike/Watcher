@@ -21,6 +21,7 @@ class movieActions extends sfActions
   {
     $this->movie = Doctrine_Core::getTable('Movie')->find(array($request->getParameter('id')));
     $this->forward404Unless($this->movie);
+    $_SESSION['current_movie'] = $this->movie;
   }
 
   public function executeNew(sfWebRequest $request)

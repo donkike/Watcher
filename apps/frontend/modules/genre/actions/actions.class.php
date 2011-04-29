@@ -66,8 +66,8 @@ class genreActions extends sfActions
     if ($form->isValid())
     {
       $genre = $form->save();
+      $this->redirect('movie_edit', $_SESSION['current_movie']);
 
-      $this->redirect('genre/edit?id='.$genre->getId());
     }
   }
 }
