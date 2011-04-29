@@ -66,8 +66,8 @@ class directorActions extends sfActions
     if ($form->isValid())
     {
       $director = $form->save();
+      $this->redirect('movie_edit', $_SESSION['current_movie']);
 
-      $this->redirect('director/edit?id='.$director->getId());
     }
   }
 }

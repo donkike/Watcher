@@ -18,7 +18,7 @@
       <p>
         <?php echo substr($movie->getSynopsis(), 0, 200) ?>
         <?php if (strlen($movie->getSynopsis()) > 200): ?>
-          <?php echo link_to('...', url_for('movie_show', $movie)) ?>
+        <?php echo link_to('...', url_for('movie_show', $movie)) ?>
         <?php endif ?>
       </p>      
     </div>
