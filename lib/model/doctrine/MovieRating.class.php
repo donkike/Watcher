@@ -12,4 +12,10 @@
  */
 class MovieRating extends BaseMovieRating
 {
+  public function submitVote($vote)
+  {
+    $this->votes += 1;
+    $this->aggregate += $vote;
+    $this->average = $this->aggregate / $this->votes;
+  }
 }
