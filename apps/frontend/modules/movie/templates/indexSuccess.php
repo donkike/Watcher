@@ -27,7 +27,7 @@
     <?php else: ?>
       <?php include_partial('noImage', array('movie' => $movie)) ?>
     <?php endif ?>
-    <?php include_partial('ratingOverall', array('rating' => $movie->getMovieRating())) ?>
+    <?php include_partial('ratingOverall', array('rating' => $movie->getMovieRating(), 'caption' => false)) ?>
   </div>
 <?php endforeach ?>
 

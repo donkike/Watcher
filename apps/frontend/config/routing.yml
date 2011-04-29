@@ -13,6 +13,11 @@ director:
 genre:
   class: sfDoctrineRouteCollection
   options: { model: Genre }
+  
+movie_rating:
+  url: /:module/:movie_id/:action/:rate
+  requirements:
+    sf_method: [post]
 
 homepage:
   url:   /
