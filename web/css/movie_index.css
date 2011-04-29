@@ -37,5 +37,8 @@
 	margin: 15px 10px;
 }
 
+form#rating_form{
+    blackground-color: none;
+}
 
 

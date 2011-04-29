@@ -3,11 +3,13 @@ body {
 }
 
 h1 {
-	margin-left: 40%;
+    margin-left: 40%;
 }
+
 dt {
-	font-weight: bold;
+    font-weight: bold;
 }
+
 
 #content {
         
@@ -29,3 +31,5 @@ a:hover {
 .user_nav{
     
 }
+
+
