@@ -9,6 +9,7 @@ Movie:
     image_link: { type: string(255) }
     trailer_link: { type: string(255) }
   relations:
+    MovieRating: { local: id, foreign: movie_id, foreignAlias: MovieRating }
     Director: { local: director_id, foreign: id, foreignAlias: Movies }
     Genre: { local: genre_id, foreign: id, foreignAlias: Movies }
     

@@ -30,8 +30,11 @@
 }
 
 .movie-index .movie-links {
-	float: right;
-	
+	float: right;	
+}
+
+.movie-index form {
+	margin: 15px 10px;
 }
 
 
