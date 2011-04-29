@@ -1,0 +1,20 @@
+form{
+    background-color: #FFF0D4;
+    border: solid 1px;
+    padding:10px;
+}
+
+form table{
+    margin-left: 40%;
+}
+
+textarea{
+    font-family: calibri;
+    padding: 5px;
+    border:solid 1px;
+}
+
+dt {
+    margin-bottom:10px;    
+    margin-top:10px;
+}
